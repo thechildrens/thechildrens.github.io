@@ -6,7 +6,7 @@ function ActiveLink({ href, children }) {
   const router = useRouter()
 
   return (
-    <div className={router.asPath === href ? "active" : ""}>
+    <div className={router.asPath.startsWith(href) ? "active" : ""}>
       <Link href={href}>{children}</Link>
     </div>
   )
@@ -35,9 +35,9 @@ export function Layout({ children }) {
           <ActiveLink href="/curriculum">Curriculum</ActiveLink>
           <ActiveLink href="/questions">Questions</ActiveLink>
           <ActiveLink href="/contact">Contact</ActiveLink>
-          <ActiveLink href="#">
+          <div>
             <img src="/message.png"></img>
-          </ActiveLink>
+          </div>
         </nav>
       </header>
       <main>
