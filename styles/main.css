@@ -2,9 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-size: 12px;
 
   background-color: #eeeeee;
 }
@@ -72,6 +71,7 @@ header {
   border-right: none;
   justify-content: right;
   background-color: white;
+  font-size: 1.2rem;
 }
 
 #navbar > div {
@@ -79,11 +79,6 @@ header {
   margin: auto;
   margin-left: 8px;
   margin-right: 8px;
-}
-
-.sep {
-  border-right: 1px dashed red;
-  min-height: 100%;
 }
 
 .logo {
@@ -108,6 +103,9 @@ header {
   margin-left: 180px;
   position: absolute;
   align-items: center;
+  color: darkorange;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
 }
 
 .midsep {

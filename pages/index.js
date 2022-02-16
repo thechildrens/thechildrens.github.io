@@ -9,6 +9,9 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"></link>
       </Head>
       <header>
         <div className="logo">
@@ -35,7 +38,9 @@ export default function Home() {
             <Link href="/contact">Access</Link>
           </div>
           <div>
-            <Link href="#">MAIL</Link>
+            <Link href="#">
+              <img src="/message.png"></img>
+            </Link>
           </div>
         </nav>
       </header>
