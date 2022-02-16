@@ -75,10 +75,27 @@ header {
 }
 
 #navbar > div {
-  display: inline-block;
+  position: relative;
+  display: flex;
   margin: auto;
   margin-left: 8px;
   margin-right: 8px;
+}
+
+#navbar > .active {
+  color:royalblue;
+}
+
+#navbar > .active::before {
+  position: absolute;
+  display: flex;
+  content: '';
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  left: 40%;
+  top: -9px;
 }
 
 .logo {
@@ -87,9 +104,10 @@ header {
   height: 200px;
   margin-top: -70px;
   margin-left: -20px;
-  border-radius: 100px;
+  border-radius: 50%;
   overflow: hidden;
   z-index: 9;
+  cursor: pointer;
 }
 
 .logo img {
