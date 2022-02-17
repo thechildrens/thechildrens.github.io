@@ -4,6 +4,19 @@ import { ContentCard } from '../../components/content-card'
 export default function Access() {
   return (
     <div className="content">
+      <ContentCard className="pd-2">
+        <div className="lanes">
+          <div className="lane">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div className="lane">
+            Test
+          </div>
+          <div className="lane">
+            Test
+          </div>
+        </div>
+      </ContentCard>
       <ContentCard>
         <div className="card-header">Testing</div>
         <div className="card-list">

@@ -102,7 +102,7 @@ header {
   border-radius: 50%;
   background-color: dodgerblue;
   left: 40%;
-  top: -9px;
+  top: -1rem;
 }
 
 .logo {
@@ -160,6 +160,31 @@ header {
 
 .w-33 {
   width: 33.33% !important;
+}
+
+.pd-1 {
+  padding: 1rem;
+}
+
+.pd-2 {
+  padding: 2rem;
+}
+
+.lanes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lane {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
+  justify-content: center;
+  border-right: 1px dotted #bbb;
+}
+
+.lane:last-child {
+  border-right: 0;
 }
 
 .card-header {
