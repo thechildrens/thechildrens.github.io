@@ -34,8 +34,8 @@ export function Layout({ children }) {
           <ActiveLink href="/features">Features</ActiveLink>
           <ActiveLink href="/curriculum">Curriculum</ActiveLink>
           <ActiveLink href="/questions">Questions</ActiveLink>
-          <ActiveLink href="/contact">Contact</ActiveLink>
-          <a href="/contact#mail">
+          <ActiveLink href="/access">Access</ActiveLink>
+          <a href="/access#mail">
             <div className="mail">
               <img src="/message.png"></img>
             </div>
@@ -51,11 +51,7 @@ export function Layout({ children }) {
         <div>電話: +886 2 8672 1163</div>
         <div>地址:
           {' '}
-          <a
-            href="https://goo.gl/maps/vH5U3J2endynxCUf8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/access#location">
             237新北市三峽區民生街46號
           </a>
         </div>
