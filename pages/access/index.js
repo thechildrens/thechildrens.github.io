@@ -88,7 +88,7 @@ export default function Access() {
           width="100%"
           height="300px"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
         />
       </ContentCard>

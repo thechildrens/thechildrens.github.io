@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from 'next/link'
 import { useRouter } from "next/router";
+import Script from "next/script";
 
 function ActiveLink({ href, children }) {
   const router = useRouter()
@@ -22,6 +23,22 @@ export function Layout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId            : '364109158600424',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v13.0'
+          });
+        };
+        `
+        }}
+      />
+      <Script strategy="lazyOnload" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js" />
+
       <header>
         <div className="logo">
           <Link href="/">
@@ -45,7 +62,9 @@ export function Layout({ children }) {
       <main>
         {children}
       </main>
-
+      <div className="fb-customerchat"
+        page_id="106227510986123">
+      </div>
       <footer>
         <div>The Children's Academy</div>
         <div>電話: +886 2 8672 1163</div>
