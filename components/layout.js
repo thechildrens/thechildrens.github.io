@@ -47,7 +47,12 @@ export function Layout({ children }) {
       <footer>
         <div>The Children's Academy</div>
         <div>電話: +886 2 8672 1163</div>
-        <div>地址: 237新北市三峽區民生街46號</div>
+        <div>地址:
+          {' '}
+          <a href="https://goo.gl/maps/vH5U3J2endynxCUf8">
+            237新北市三峽區民生街46號
+          </a>
+        </div>
       </footer>
     </div>
   )
