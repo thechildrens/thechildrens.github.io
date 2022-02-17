@@ -47,11 +47,31 @@ export function Layout({ children }) {
         </div>
         <div className="logo-name">孩子們的國際學堂</div>
         <nav id="navbar">
-          <ActiveLink href="/about">About</ActiveLink>
-          <ActiveLink href="/features">Features</ActiveLink>
-          <ActiveLink href="/curriculum">Curriculum</ActiveLink>
-          <ActiveLink href="/questions">Questions</ActiveLink>
-          <ActiveLink href="/access">Access</ActiveLink>
+          <ActiveLink href="/about">
+            <div>
+              關於
+              <div className="translation">About</div>
+            </div>
+          </ActiveLink>
+          {/* <ActiveLink href="/features">Features</ActiveLink> */}
+          <ActiveLink href="/curriculum">
+            <div>
+              课表
+              <div className="translation">Curriculum</div>
+            </div>
+          </ActiveLink>
+          <ActiveLink href="/information">
+            <div>
+              信息
+              <div className="translation">Info</div>
+            </div>
+          </ActiveLink>
+          <ActiveLink href="/access">
+            <div>
+              访问
+              <div className="translation">Access</div>
+            </div>
+          </ActiveLink>
           <a href="/access#mail">
             <div className="mail">
               <img src="/message.png"></img>

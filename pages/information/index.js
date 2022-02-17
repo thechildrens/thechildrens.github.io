@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 import { ContentCard } from '../../components/content-card'
 import styles from './index.module.css'
@@ -17,11 +18,12 @@ function Question() {
   )
 }
 
-export default function Questions() {
+export default function Information() {
   return (
     <div className="content">
       <div className="section-head">
-        Q&A
+        問答
+        <div className="translation">Q&A</div>
       </div>
       <section>
         <Question></Question>
