@@ -4,13 +4,14 @@
   min-height: 120px;
   border: 3px solid skyblue;
   border-radius: 8px;
-  background-color: white;
+  background-color: skyblue;
+  color: white;
 }
 
 .question_q {
   width: 100%;
   background-color: skyblue;
-  border-bottom: 3px solid skyblue;
+  border-bottom: 3px dotted white;
   position: relative;
   padding-left: 1rem;
   color: white;
@@ -70,11 +71,11 @@
 
 .question:nth-child(odd) {
   border-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 .question:nth-child(odd) .question_q  {
   background-color: cornflowerblue;
-  border-color: cornflowerblue;
 }
 
 .question:nth-child(odd) .question_icon  {

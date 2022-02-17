@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-import { ContentCard } from '../../components/content-card'
 import styles from './index.module.css'
 
 function Question() {

@@ -3,12 +3,15 @@ import Link from 'next/link'
 import { useRouter } from "next/router";
 import Script from "next/script";
 
-function ActiveLink({ href, children }) {
+function ActiveLink({ href, children, translation }) {
   const router = useRouter()
 
   return (
     <div className={router.asPath.startsWith(href) ? "active" : ""}>
-      <Link href={href}>{children}</Link>
+      <div><Link href={href}>{children}</Link></div>
+      <Link href={href}>
+        <div className="translation">{translation}</div>
+      </Link>
     </div>
   )
 }
@@ -47,31 +50,11 @@ export function Layout({ children }) {
         </div>
         <div className="logo-name">孩子們的國際學堂</div>
         <nav id="navbar">
-          <ActiveLink href="/about">
-            <div>
-              關於
-              <div className="translation">About</div>
-            </div>
-          </ActiveLink>
+          <ActiveLink href="/about" translation="About">關於</ActiveLink>
           {/* <ActiveLink href="/features">Features</ActiveLink> */}
-          <ActiveLink href="/curriculum">
-            <div>
-              课表
-              <div className="translation">Curriculum</div>
-            </div>
-          </ActiveLink>
-          <ActiveLink href="/information">
-            <div>
-              信息
-              <div className="translation">Info</div>
-            </div>
-          </ActiveLink>
-          <ActiveLink href="/access">
-            <div>
-              访问
-              <div className="translation">Access</div>
-            </div>
-          </ActiveLink>
+          <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
+          <ActiveLink href="/information" translation="Info">信息</ActiveLink>
+          <ActiveLink href="/access" translation="Access">访问</ActiveLink>
           <a href="/access#mail">
             <div className="mail">
               <img src="/message.png"></img>
