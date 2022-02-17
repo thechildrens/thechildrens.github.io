@@ -35,9 +35,11 @@ export function Layout({ children }) {
           <ActiveLink href="/curriculum">Curriculum</ActiveLink>
           <ActiveLink href="/questions">Questions</ActiveLink>
           <ActiveLink href="/contact">Contact</ActiveLink>
-          <div className="mail">
-            <img src="/message.png"></img>
-          </div>
+          <a href="/contact#mail">
+            <div className="mail">
+              <img src="/message.png"></img>
+            </div>
+          </a>
         </nav>
       </header>
       <main>

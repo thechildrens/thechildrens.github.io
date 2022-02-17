@@ -1,6 +1,6 @@
-export function ContentCard({ children }) {
+export function ContentCard({ id, children }) {
   return (
-    <div className="content-card">
+    <div id={id} className="content-card">
       {children}
     </div>
   )
