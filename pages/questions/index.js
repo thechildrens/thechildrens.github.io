@@ -11,7 +11,7 @@ function Question() {
       </div>
       <div className={styles.question_a}>
         <div className={styles.answer_icon}>A</div>
-        <span>No</span>
+        <span>No. No send tree pay.</span>
       </div>
     </div>
   )
@@ -24,6 +24,7 @@ export default function Questions() {
         Q&A
       </div>
       <section>
+        <Question></Question>
         <Question></Question>
       </section>
     </div>
