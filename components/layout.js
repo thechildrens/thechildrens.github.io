@@ -16,11 +16,11 @@ export function Layout({ children }) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>The Children's</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <header>
         <div className="logo">
@@ -35,7 +35,7 @@ export function Layout({ children }) {
           <ActiveLink href="/curriculum">Curriculum</ActiveLink>
           <ActiveLink href="/questions">Questions</ActiveLink>
           <ActiveLink href="/contact">Contact</ActiveLink>
-          <div>
+          <div className="mail">
             <img src="/message.png"></img>
           </div>
         </nav>
@@ -49,7 +49,11 @@ export function Layout({ children }) {
         <div>電話: +886 2 8672 1163</div>
         <div>地址:
           {' '}
-          <a href="https://goo.gl/maps/vH5U3J2endynxCUf8">
+          <a
+            href="https://goo.gl/maps/vH5U3J2endynxCUf8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             237新北市三峽區民生街46號
           </a>
         </div>

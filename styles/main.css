@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Balsamiq Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 12px;
 
   background-color: #eeeeee;
@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: darkorange;
   text-decoration: none;
 }
 
@@ -38,7 +38,6 @@ footer {
   align-items: center;
   flex-direction: column;
   background-color: #fbfbfb;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 code {
@@ -74,16 +73,24 @@ header {
   font-size: 1.2rem;
 }
 
+#navbar a {
+  color: #6a869c;
+}
+
+#navbar a:hover {
+  color: dodgerblue !important;
+}
+
+#navbar > .active > a {
+  color: royalblue;
+}
+
 #navbar > div {
   position: relative;
   display: flex;
   margin: auto;
   margin-left: 8px;
   margin-right: 8px;
-}
-
-#navbar > .active {
-  color:royalblue;
 }
 
 #navbar > .active::before {
@@ -141,7 +148,65 @@ header {
 
 .content-card {
   width: 100%;
-  padding: 1px;
   border: 4px solid white;
   border-radius: 3px;
+  margin-bottom: 1.5rem;
+  background-color: white;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-33 {
+  width: 33.33% !important;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  color: #0d6fb8;
+  margin: 1rem;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-list {
+  width: 100%;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.card-item {
+  border-top: 1px dotted #bbb;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-item-key {
+  width: 25%;
+  vertical-align: top;
+  color: tomato;
+  display: inline-block;
+}
+
+.card-item-value {
+  width: 75%;
+  display: inline-block;
+}
+
+.mail {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+
+.mail > img {
+  margin-top: -2px;
+}
+
+.mail:hover {
+  border: 4px dashed rgba(0, 38, 255, 0.3);
 }
