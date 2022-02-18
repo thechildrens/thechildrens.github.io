@@ -1,19 +1,52 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import { ContentCard } from '../../components/content-card'
+import { Phone, Mail, Facebook } from '../../components/icons'
 
 export default function Access() {
+  const [email, setEmail] = useState(null)
+  const showEmail = useCallback(() => {
+    setEmail(atob("em9leW91NTIwNTIwQGdtYWlsLmNvbQ=="))
+    return false;
+  })
+
   return (
     <div className="content">
       <ContentCard className="pd-2">
         <div className="lanes">
           <div className="lane">
-            <i class="fa-solid fa-phone"></i>
+            <Phone style={{ width: '10%', backgroundColor: "lightpink" }} className="circled" />
+            <div style={{ fontWeight: 'bold' }}>
+              電話
+            </div>
+            <div style={{ fontSize: '1.5rem', color: 'lightpink' }}>
+              +886-2-8672-1163
+            </div>
+            <div>
+              月～五 8:00～19:00
+            </div>
           </div>
           <div className="lane">
-            Test
+            <Facebook style={{ width: '10%', backgroundColor: "steelblue" }} className="circled" />
+            <div style={{ fontWeight: 'bold' }}>
+              Facebook
+            </div>
+            <a href="https://www.facebook.com/thechildrensacademy" target="_blank" style={{ fontSize: '1.5rem' }}>
+              thechildrensacademy
+            </a>
           </div>
           <div className="lane">
-            Test
+            <Mail style={{ width: '10%', backgroundColor: "skyblue" }} className="circled" />
+            <div style={{ fontWeight: 'bold' }}>
+              电邮
+            </div>
+            {
+              email
+                ? <div style={{ fontSize: '1.5rem', color: 'skyblue' }}>{email}</div>
+                : <a href="javascript:void(0)" style={{ fontSize: '1.5rem' }} onClick={showEmail}>
+                  show
+                </a>
+            }
+
           </div>
         </div>
       </ContentCard>
