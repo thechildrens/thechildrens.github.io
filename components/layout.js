@@ -70,7 +70,12 @@ export function Layout({ children }) {
       </div>
       <footer>
         <div>The Children's Academy</div>
-        <div>電話: +886 2 8672 1163</div>
+        <div>電話:
+          {' '}
+          <a href="/access#contact">
+            +886 2 8672 1163
+          </a>
+        </div>
         <div>地址:
           {' '}
           <a href="/access#location">

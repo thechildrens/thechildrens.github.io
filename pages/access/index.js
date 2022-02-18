@@ -7,11 +7,11 @@ export default function Access() {
   const showEmail = useCallback(() => {
     setEmail(atob("em9leW91NTIwNTIwQGdtYWlsLmNvbQ=="))
     return false;
-  })
+  }, [setEmail])
 
   return (
     <div className="content">
-      <ContentCard className="pd-2">
+      <ContentCard id="contact" className="pd-2">
         <div className="lanes">
           <div className="lane">
             <Phone style={{ width: '10%', backgroundColor: "lightpink" }} className="circled" />
@@ -37,7 +37,7 @@ export default function Access() {
           <div className="lane">
             <Mail style={{ width: '10%', backgroundColor: "skyblue" }} className="circled" />
             <div style={{ fontWeight: 'bold' }}>
-              电邮
+              電郵
             </div>
             {
               email
