@@ -7,10 +7,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-bottom: 3rem;
 }
 
 .title {
-  margin: 6rem;
+  margin: 4rem;
   font-weight: bold;
   font-size: 3rem;
   text-align: center;

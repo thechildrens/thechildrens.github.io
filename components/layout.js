@@ -23,7 +23,7 @@ export function Layout({ children }) {
         <title>The Children's</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <Script
@@ -40,7 +40,7 @@ export function Layout({ children }) {
         `
         }}
       />
-      <Script strategy="lazyOnload" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js" />
+      <Script strategy="lazyOnload" crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js" />
 
       <header>
         <div className="logo">
@@ -55,7 +55,7 @@ export function Layout({ children }) {
           <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
           <ActiveLink href="/information" translation="Info">信息</ActiveLink>
           <ActiveLink href="/access" translation="Access">访问</ActiveLink>
-          <a href="/access#mail">
+          <a href="/access#contact">
             <div className="mail">
               <img src="/message.png"></img>
             </div>
