@@ -7,8 +7,6 @@ export default function Home() {
       <div className={styles.title}>
         The Children's Academy
         <div>
-          孩子們的國際學堂
-          <br />
           國際領袖班 / 小班制教學
         </div>
       </div>
