@@ -24,16 +24,16 @@ export default function Home() {
       <ContentCard id="contact" className={`pd-2 ${styles.motto}`}>
         <div className="lanes">
           <div className="lane">
-            Let kiddos be kiddos.
+            Let kiddos be kiddos
             <div className="translation">讓孩子做孩子。</div>
 
           </div>
           <div className="lane">
-            Self-awareness development.
+            Self-awareness development
             <div className="translation">自我覺知發展。</div>
           </div>
           <div className="lane">
-            Resilience, Strength and Weakness Balance.
+            Resilience, Strength and Weakness Balance
             <div className="translation">心理韌性 / 優缺勢平衡。</div>
           </div>
         </div>
