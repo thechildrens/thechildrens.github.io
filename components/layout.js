@@ -54,8 +54,7 @@ export function Layout({ children }) {
           {/* <ActiveLink href="/features">Features</ActiveLink> */}
           <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
           <ActiveLink href="/information" translation="Info">信息</ActiveLink>
-          <ActiveLink href="/access" translation="Access">访问</ActiveLink>
-          <a href="/access#contact">
+          <a href="/about#contact">
             <div className="mail">
               <img src="/message.png"></img>
             </div>
@@ -72,13 +71,13 @@ export function Layout({ children }) {
         <div>The Children's Academy</div>
         <div>電話:
           {' '}
-          <a href="/access#contact">
+          <a href="/about#contact">
             +886 2 8672 1163
           </a>
         </div>
         <div>地址:
           {' '}
-          <a href="/access#location">
+          <a href="/about#location">
             237新北市三峽區民生街46號
           </a>
         </div>
