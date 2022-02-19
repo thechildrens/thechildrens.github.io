@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from 'next/link'
 import { useRouter } from "next/router";
 import Script from "next/script";
+import { useCallback, useState } from "react";
+import { Bars } from "./icons";
 
 function ActiveLink({ href, children, translation }) {
   const router = useRouter()
@@ -17,6 +19,12 @@ function ActiveLink({ href, children, translation }) {
 }
 
 export function Layout({ children }) {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleMenuToggle = useCallback(() => {
+    setMenuOpen(x => !x)
+  }, [setMenuOpen])
+
   return (
     <div className="container">
       <Head>
@@ -43,13 +51,16 @@ export function Layout({ children }) {
       <Script strategy="lazyOnload" crossOrigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js" />
 
       <header>
+        <div className="menu-toggle" onClick={handleMenuToggle}>
+          <Bars />
+        </div>
         <div className="logo">
           <Link href="/">
             <img src="/logo.png" width="auto" height="auto" />
           </Link>
         </div>
         <div className="logo-name">孩子們的國際學堂</div>
-        <nav id="navbar">
+        <nav className="navbar">
           <ActiveLink href="/about" translation="About">關於</ActiveLink>
           {/* <ActiveLink href="/features">Features</ActiveLink> */}
           <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
@@ -60,9 +71,50 @@ export function Layout({ children }) {
             </div>
           </a>
         </nav>
+        <nav className="navbar mobile-navbar">
+          <div></div>
+          <div className="mobile-logo">
+            <Link href="/">
+              <img src="/logo.png" width="auto" height="auto" />
+            </Link>
+          </div>
+          <a href="/about#contact">
+            <div className="mail">
+              <img src="/message.png"></img>
+            </div>
+          </a>
+        </nav>
       </header>
       <main>
         {children}
+        {menuOpen &&
+          <nav className="mobile-menu">
+            <div className="logo">
+              <Link href="/">
+                <img src="/logo.png" width="auto" height="auto" />
+              </Link>
+            </div>
+            <div className="menu-toggle" onClick={handleMenuToggle}>
+              <Bars />
+            </div>
+            <div className="footer">
+              <div>
+                電話:
+                {' '}
+                <a href="/about#contact">
+                  +886 2 8672 1163
+                </a>
+              </div>
+              <div>
+                地址:
+                {' '}
+                <a href="/about#location">
+                  237新北市三峽區民生街46號
+                </a>
+              </div>
+            </div>
+          </nav>
+        }
       </main>
       <div className="fb-customerchat"
         page_id="106227510986123">

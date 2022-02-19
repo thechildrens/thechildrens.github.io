@@ -21,7 +21,7 @@ export default function Home() {
         <div className="translation">About</div>
       </div> */}
 
-      <ContentCard id="contact" className={`pd-2 ${styles.motto}`}>
+      <ContentCard id="contact" className={`pd-1 ${styles.motto}`}>
         <div className="lanes">
           <div className="lane">
             Let kiddos be kiddos
@@ -39,20 +39,14 @@ export default function Home() {
         </div>
       </ContentCard>
 
-      <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fthechildrensacademy%2Fvideos%2F686376336077263%2F&show_text=false&width=560&t=0"
-        width="560"
-        height="314"
-        style={{
-          border: 'none',
-          borderRadius: '1rem',
-          overflow: 'hidden',
-          marginBottom: '2rem',
-        }}
-        scrolling="no"
-        frameborder="0"
-        allowFullScreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-      </iframe>
+      <div className={styles.video_wrapper}>
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fthechildrensacademy%2Fvideos%2F686376336077263%2F&show_text=false&width=560&t=0"
+          scrolling="no"
+          frameborder="0"
+          allowFullScreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
     </div>
   )
 }

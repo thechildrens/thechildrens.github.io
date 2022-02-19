@@ -69,27 +69,28 @@ header {
   border-bottom: 4px solid #eaeaea;
 }
 
-#navbar {
+.navbar {
   display: flex;
-  height: 60px;
+  height: 5rem;
   align-self: flex-end;
   justify-content: right;
   font-size: 1.25rem;
+  position: relative;
 }
 
-#navbar a {
+.navbar a {
   color: #6a869c;
 }
 
-#navbar a:hover {
+.navbar a:hover {
   color: dodgerblue !important;
 }
 
-#navbar > .active a {
+.navbar > .active a {
   color: royalblue;
 }
 
-#navbar > div {
+.navbar > div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -101,7 +102,7 @@ header {
   cursor: pointer;
 }
 
-#navbar > .active::before {
+.navbar > .active::before {
   position: absolute;
   display: flex;
   content: '';
@@ -198,7 +199,7 @@ header {
 }
 
 .lane:last-child {
-  border-right: 0;
+  border: 0;
 }
 
 .card-header {
@@ -276,4 +277,111 @@ section {
   border-radius: 50%;
   padding: 5%;
   box-sizing: content-box;
+}
+
+.menu-toggle, .mobile-menu, .mobile-header, .mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .content-card {
+    border-radius: 0 !important;
+  }
+
+  header .logo, .logo-name {
+    display: none;
+  }
+
+  .logo {
+    position: relative;
+    display: block;
+  }
+  
+  .content {
+    margin-top: 5rem;
+  }
+
+  .mobile-header {
+    position: fixed;
+    top: 0;
+  }
+
+  header {
+    border-color: #ddd;
+    position: fixed;
+    top: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 5rem);
+  }
+
+  .mobile-logo {
+    max-height: 5rem;
+    overflow: hidden;
+    margin: 0 !important;
+  }
+
+  .mobile-logo img {
+    margin-top: -2.5rem;
+    max-height: 10rem;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    display: inline-block;
+    width: 3.25rem;
+    margin: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .menu-toggle svg {
+    background-color: #fafafa;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: rgb(255, 195, 121);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 320px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-right: 3px solid #ddd;
+    align-items: center;
+  }
+
+  .mobile-menu .menu-toggle {
+    right: 0;
+  }
+
+  .mobile-menu .footer {
+  }
+
+  footer {
+    display: none;
+  }
+
+  .lanes {
+    flex-direction: column;
+  }
+  
+  .lane {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 0;
+    border-bottom: 1px dotted #bbb;
+  }  
 }

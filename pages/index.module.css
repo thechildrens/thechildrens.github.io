@@ -34,3 +34,25 @@
 .about {
   margin-bottom: 2rem;
 }
+
+.video_wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.video_wrapper > iframe {
+  width: 100vw;
+  height: 56.25vw;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 560px;
+  max-height: 314px;
+}
+
+@media screen and (max-width: 480px) {
+  .video_wrapper > iframe {
+    border-radius: 0;
+  }
+}
