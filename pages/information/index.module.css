@@ -84,7 +84,8 @@
 
 @media screen and (max-width: 900px) {
   .question {
-    border-radius: 1rem 0 0 1rem !important;
     margin-left: 1rem;
+    margin-right: 1rem;
+    width: calc(100% - 2rem)
   }
 }
