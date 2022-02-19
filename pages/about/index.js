@@ -26,7 +26,7 @@ export default function About() {
       <ContentCard id="contact" className="pd-2">
         <div className="lanes">
           <div className="lane">
-            <Phone style={{ width: '10%', backgroundColor: "lightpink" }} className="circled" />
+            <Phone style={{ width: '2rem', height: '2rem', backgroundColor: "lightpink" }} className="circled" />
             <div style={{ fontWeight: 'bold' }}>
               電話
             </div>
@@ -38,7 +38,7 @@ export default function About() {
             </div>
           </div>
           <div className="lane">
-            <Facebook style={{ width: '10%', backgroundColor: "steelblue" }} className="circled" />
+            <Facebook style={{ width: '2rem', height: '2rem', backgroundColor: "steelblue" }} className="circled" />
             <div style={{ fontWeight: 'bold' }}>
               Facebook
             </div>
@@ -47,7 +47,7 @@ export default function About() {
             </a>
           </div>
           <div className="lane">
-            <Mail style={{ width: '10%', backgroundColor: "skyblue" }} className="circled" />
+            <Mail style={{ width: '2rem', height: '2rem', backgroundColor: "skyblue" }} className="circled" />
             <div style={{ fontWeight: 'bold' }}>
               電郵
             </div>

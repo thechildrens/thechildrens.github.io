@@ -65,15 +65,15 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: white;
+  border-bottom: 4px solid #eaeaea;
 }
 
 #navbar {
   display: flex;
   height: 60px;
-  border-bottom: 4px solid #eaeaea;
-  box-sizing: content-box;
+  align-self: flex-end;
   justify-content: right;
-  background-color: white;
   font-size: 1.25rem;
 }
 
