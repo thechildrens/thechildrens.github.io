@@ -42,8 +42,8 @@ export default function Home() {
       <div className={styles.video_wrapper}>
         <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fthechildrensacademy%2Fvideos%2F686376336077263%2F&show_text=false&width=560&t=0"
           scrolling="no"
-          frameborder="0"
-          allowFullScreen="true"
+          frameBorder="0"
+          allowFullScreen={true}
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe>
       </div>

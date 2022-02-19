@@ -81,3 +81,10 @@
 .question:nth-child(odd) .question_icon  {
   border-color: cornflowerblue;
 }
+
+@media screen and (max-width: 900px) {
+  .question {
+    border-radius: 1rem 0 0 1rem !important;
+    margin-left: 1rem;
+  }
+}

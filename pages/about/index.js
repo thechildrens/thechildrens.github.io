@@ -20,11 +20,11 @@ export default function About() {
         <div className="translation">About</div>
       </div>
 
-      <div className="section-head">
+      <div id="contact" className="section-head">
         聯繫信息
         <div className="translation">Contact Information</div>
       </div>
-      <ContentCard id="contact" className="pd-1">
+      <ContentCard className="pd-1">
         <div className="lanes">
           <div className="lane">
             <div className="circled" style={{ width: '2rem', height: '2rem', backgroundColor: "lightpink" }}>
@@ -63,12 +63,12 @@ export default function About() {
         </div>
       </ContentCard>
 
-      <div className="section-head">
+      <div id="location" className="section-head">
         訪問
         <div className="translation">Access</div>
       </div>
 
-      <ContentCard id="location">
+      <ContentCard>
         <div className="card-header">
           營業時間
           <span className="translation"> ( Business Hours )</span>

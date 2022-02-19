@@ -9,7 +9,7 @@ function ActiveLink({ href, children, translation }) {
   const router = useRouter()
 
   return (
-    <div className={router.asPath.startsWith(href) ? "active" : ""}>
+    <div className={`active-link ${router.asPath.startsWith(href) ? "active" : ""}`}>
       <div><Link href={href}>{children}</Link></div>
       <Link href={href}>
         <div className="translation">{translation}</div>
@@ -89,26 +89,34 @@ export function Layout({ children }) {
         {children}
         {menuOpen &&
           <nav className="mobile-menu">
-            <div className="logo">
-              <Link href="/">
-                <img src="/logo.png" width="auto" height="auto" />
-              </Link>
-            </div>
             <div className="menu-toggle" onClick={handleMenuToggle}>
               <Bars />
+            </div>
+            <div className="upper">
+              <div className="logo">
+                <Link href="/">
+                  <img src="/logo.png" width="auto" height="auto" />
+                </Link>
+              </div>
+              <div className="navbar" onClick={handleMenuToggle}>
+                <ActiveLink href="/about" translation="About">關於</ActiveLink>
+                {/* <ActiveLink href="/features">Features</ActiveLink> */}
+                <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
+                <ActiveLink href="/information" translation="Info">信息</ActiveLink>
+              </div>
             </div>
             <div className="footer">
               <div>
                 電話:
                 {' '}
-                <a href="/about#contact">
+                <a href="/about#contact" onClick={handleMenuToggle}>
                   +886 2 8672 1163
                 </a>
               </div>
               <div>
                 地址:
                 {' '}
-                <a href="/about#location">
+                <a href="/about#location" onClick={handleMenuToggle}>
                   237新北市三峽區民生街46號
                 </a>
               </div>
