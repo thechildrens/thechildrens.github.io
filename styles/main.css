@@ -247,7 +247,7 @@ header {
 }
 
 .mail:hover {
-  border: 4px dashed rgba(0, 38, 255, 0.3);
+  border: 4px dotted rgba(0, 38, 255, 0.3);
 }
 
 section {

@@ -29,7 +29,7 @@ export default function About() {
             <div className="circled" style={{ width: '2rem', height: '2rem', backgroundColor: "lightpink" }}>
               <Phone />
             </div>
-            <div style={{ fontWeight: 'bold' }}>
+            <div style={{ fontSize: '1.2rem' }}>
               電話
             </div>
             <div style={{ fontSize: '1.5rem', color: 'lightpink' }}>
@@ -43,7 +43,7 @@ export default function About() {
             <div className="circled" style={{ width: '2rem', height: '2rem', backgroundColor: "steelblue" }}>
               <Facebook />
             </div>
-            <div style={{ fontWeight: 'bold' }}>
+            <div style={{ fontSize: '1.2rem' }}>
               Facebook
             </div>
             <a href="https://www.facebook.com/thechildrensacademy" target="_blank" style={{ fontSize: '1.5rem' }}>
@@ -54,7 +54,7 @@ export default function About() {
             <div className="circled" style={{ width: '2rem', height: '2rem', backgroundColor: "skyblue" }}>
               <Mail />
             </div>
-            <div style={{ fontWeight: 'bold' }}>
+            <div style={{ fontSize: '1.2rem' }}>
               電郵
             </div>
             <div style={{ fontSize: '1.5rem', color: 'skyblue' }}>{email ? email : '-'}</div>
