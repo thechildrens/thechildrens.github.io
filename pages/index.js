@@ -26,7 +26,6 @@ export default function Home() {
           <div className="lane">
             Let kiddos be kiddos
             <div className="translation">讓孩子做孩子。</div>
-
           </div>
           <div className="lane">
             Self-awareness development
