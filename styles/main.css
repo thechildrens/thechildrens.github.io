@@ -69,7 +69,6 @@ code {
   max-width: 1080px;
   display: flex;
   flex-direction: column;
-  border: 2px solid #ccc;
   border-top: 0;
   border-bottom: 0;
   overflow-x: hidden;
@@ -304,13 +303,17 @@ section {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
+  html {
+    overflow-y: hidden;
+  }
+
   .logo-name {
     display: none;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
 
   header .logo {
     display: none;
