@@ -32,7 +32,7 @@ export default function Home() {
             <div className="translation">自我覺知發展。</div>
           </div>
           <div className="lane">
-            Resilience, Strength and Weakness Balance
+            Resilience, Balance of Strength and Weakness
             <div className="translation">心理韌性 / 優缺勢平衡。</div>
           </div>
         </div>

@@ -76,22 +76,22 @@ export default function About() {
         <div className="card-list">
           <div className="card-item">
             <div className="card-item-key">學生容量 Capacity</div>
-            <div className="card-item-value">20</div>
+            <div className="card-item-value">30</div>
           </div>
           <div className="card-item">
             <div className="card-item-key">開門時間 Hours</div>
             <div className="card-item-value">
-              星期一 (Mon): 9:00～19:00
+              星期一 (Mon): 12:00～20:00
               <br />
-              星期二 (Tue): 12:00～19:00
+              星期二 (Tue): 15:00～20:00
               <br />
-              星期三 (Wed): 9:00～19:00
+              星期三 (Wed): 12:00～20:00
               <br />
-              星期四 (Thu): 9:00～19:00
+              星期四 (Thu): 12:00～20:00
               <br />
-              星期五 (Fri): 9:00～19:00
+              星期五 (Fri): 12:00～20:00
               <br />
-              星期六 (Sat): 10:00～19:00
+              星期六 (Sat): 14:00～17:00
             </div>
           </div>
           <div className="card-item">
