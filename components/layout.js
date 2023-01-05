@@ -63,7 +63,7 @@ export function Layout({ children }) {
         <nav className="navbar">
           <ActiveLink href="/about" translation="About">關於</ActiveLink>
           {/* <ActiveLink href="/features">Features</ActiveLink> */}
-          <ActiveLink href="/curriculum" translation="Curriculum">课表</ActiveLink>
+          <ActiveLink href="/curriculum" translation="Curriculum">課表</ActiveLink>
           <ActiveLink href="/information" translation="Info">信息</ActiveLink>
           <a href="/about#contact">
             <div className="mail">
