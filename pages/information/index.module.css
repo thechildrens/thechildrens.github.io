@@ -1,6 +1,6 @@
 .question {
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2.6rem;
   min-height: 120px;
   border: 3px solid skyblue;
   border-radius: 8px;
@@ -13,29 +13,30 @@
   background-color: skyblue;
   border-bottom: 3px dotted white;
   position: relative;
-  padding-left: 1rem;
+  padding-left: 0.85rem;
   color: white;
 }
 
-.question_q > span {
+.question_q>span {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.4rem;
   padding-left: 5rem;
-  font-size: 1.75rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .question_icon {
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   display: inline-block;
   border-radius: 50%;
   border: 4px solid skyblue;
   background-color: white;
-  margin-top: -2rem;
+  margin-top: -1.7rem;
   text-align: center;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
   font-weight: bold;
   color: lightpink;
 }
@@ -45,26 +46,26 @@
   height: 100%;
   padding: 2rem;
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-.question_a > span {
+.question_a>span {
   padding: 1rem;
   padding-left: 5rem;
 }
 
 .answer_icon {
   position: absolute;
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   display: inline-block;
   border-radius: 50%;
   border: 4px solid white;
   background-color: lightpink;
-  margin-top: -1rem;
+  margin-top: -0.85rem;
   text-align: center;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.7rem;
+  line-height: 2.6rem;
   font-weight: bold;
   color: white;
 }
@@ -74,11 +75,11 @@
   background-color: cornflowerblue;
 }
 
-.question:nth-child(odd) .question_q  {
+.question:nth-child(odd) .question_q {
   background-color: cornflowerblue;
 }
 
-.question:nth-child(odd) .question_icon  {
+.question:nth-child(odd) .question_icon {
   border-color: cornflowerblue;
 }
 

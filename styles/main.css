@@ -3,11 +3,11 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
-  background-image: radial-gradient(#ddd 20%, transparent 20%),
-  radial-gradient(#fafafa 20%, transparent 20%);
-  background-color: #eee;
+  background-image: radial-gradient(rgb(200, 200, 200), transparent 20%),
+    radial-gradient(rgb(230, 230, 230) 20%, transparent 20%);
+  background-color: rgb(218, 218, 218);
   background-position: 0 0, 5px 5px;
   background-size: 10px 10px;
 }
@@ -57,12 +57,24 @@ code {
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.container {
-  min-height: 100vh;
+#__next {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-top: 0;
+  border-bottom: 0;
+  overflow-x: hidden;
+
+  background-color: #efefef;
 }
 
 header {
@@ -90,11 +102,11 @@ header {
   color: dodgerblue !important;
 }
 
-.navbar > .active a {
+.navbar>.active a {
   color: royalblue;
 }
 
-.navbar > div {
+.navbar>div {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -106,7 +118,7 @@ header {
   cursor: pointer;
 }
 
-.navbar > .active::before {
+.navbar>.active::before {
   position: absolute;
   display: flex;
   content: '';
@@ -123,7 +135,6 @@ header {
   width: 200px;
   height: 200px;
   margin-top: -70px;
-  margin-left: -20px;
   border-radius: 50%;
   overflow: hidden;
   z-index: 9;
@@ -138,7 +149,7 @@ header {
 .logo-name {
   display: flex;
   height: 60px;
-  margin-left: 186px;
+  margin-left: 210px;
   position: absolute;
   align-items: center;
   color: darkorange;
@@ -198,7 +209,7 @@ header {
   border-right: 1px dotted #bbb;
 }
 
-.lane > * {
+.lane>* {
   margin: 0.1rem;
 }
 
@@ -207,7 +218,7 @@ header {
 }
 
 .card-header {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #0d6fb8;
   margin: 1rem;
 }
@@ -247,7 +258,7 @@ header {
   border: 4px solid transparent;
 }
 
-.mail > img {
+.mail>img {
   margin-top: -2px;
 }
 
@@ -260,14 +271,14 @@ section {
 }
 
 .section-head {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
 .translation {
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
   color: slateblue;
 }
@@ -310,7 +321,7 @@ section {
     display: block;
     margin: auto;
   }
-  
+
   .content {
     margin-top: 5rem;
   }
@@ -346,7 +357,7 @@ section {
     margin-top: -2.5rem;
     max-height: 10rem;
   }
-  
+
   .menu-toggle {
     display: flex;
     position: absolute;
@@ -355,7 +366,7 @@ section {
     margin: 0.75rem;
     cursor: pointer;
   }
-  
+
   .menu-toggle svg {
     background-color: #fafafa;
     border: 3px solid #ddd;
@@ -428,11 +439,11 @@ section {
   .lanes {
     flex-direction: column;
   }
-  
+
   .lane {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border: 0;
     border-bottom: 1px dotted #bbb;
-  }  
+  }
 }
