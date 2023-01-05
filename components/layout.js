@@ -56,7 +56,7 @@ export function Layout({ children }) {
         </div>
         <div className="logo">
           <Link href="/">
-            <img src="/logo.png" width="auto" height="auto" />
+            <img src="./logo.png" width="auto" height="auto" />
           </Link>
         </div>
         <div className="logo-name">孩子們的國際學堂</div>
@@ -67,7 +67,7 @@ export function Layout({ children }) {
           <ActiveLink href="/information" translation="Info">信息</ActiveLink>
           <a href="/about#contact">
             <div className="mail">
-              <img src="/message.png"></img>
+              <img src="./message.png"></img>
             </div>
           </a>
         </nav>
@@ -80,7 +80,7 @@ export function Layout({ children }) {
           </div>
           <a href="/about#contact">
             <div className="mail">
-              <img src="/message.png"></img>
+              <img src="./message.png"></img>
             </div>
           </a>
         </nav>

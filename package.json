@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "git subtree split --prefix=out -b gh-pages"
   },
   "dependencies": {
     "next": "latest",
